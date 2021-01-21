@@ -46,6 +46,15 @@ function draw(){
  fill(255,255,254);
  textSize(15);
 
+if(Lastfeed>=12){
+    text("Last Fed:"+ Lastfeed%12 + "PM",350,30);
+  }else if(Lastfeed==0){
+    text("Last Fed: 12 AM",350,30);
+  }else{
+    text("Last Fed:"+ Lastfeed + "PM",350,30);
+  }
+	
+	
 drawSprites();
 }
 function readPosition(data){
